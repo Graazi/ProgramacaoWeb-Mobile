@@ -1,0 +1,11 @@
+*Anotações da aula*
+
+Curl
+Back4app
+Fetch
+Axios
+Parse
+
+== / ===
+!= / !==
+
