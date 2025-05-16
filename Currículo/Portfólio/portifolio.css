@@ -6,47 +6,56 @@
 
 }
 
+:root {
+    --primaria: #150050;
+    --secundaria: #892CDC;
+    --escuro: #52057B;
+    --claro: #BC6FF1;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    background-color: var(--escuro);
+    color: var(--claro);
 }
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
 }
-nav ul {
+
+.menu {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
+    gap: 3rem;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
+
+.menu-link {
     text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
 }
-.projeto {
-    margin: 10px;
-    padding: 20px;
-    background-color: #f4f4f4;
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-form input, form textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
+
+.foto-de-perfil {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid;
 }
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #555;
-}
+
+
